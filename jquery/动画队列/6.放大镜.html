@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>放大镜</title>
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript">
+	$.fn.extend({
+		preview:function(){
+			var bigImg='';
+			this.mouseenter(function(){
+				$('<div/>',{id:'smallbox'}).css({
+					width:100,
+					height:100,
+					background:'rgba(255,255,0,0.5)',
+					position:'absolute',
+					left:0,
+					top:0
+				}).appendTo(this);
+				bigImg=$(this).find('img').data('big');
+			}).mousemove(function(e){
+				var boxOffset=$(this).offset();//获取大盒子坐标
+				var pos={x:e.pageX-boxOffset.left-50,y:e.pageY-boxOffset.top-50}
+				if(pos.x<0) pos.x=0;
+				if(pos.x>250) pos.x=250;
+				if(pos.y<0) pos.y=0;
+				if(pos.y>350) pos.y=350;
+				
+				$(this).find('div#smallbox').css({
+					left:pos.x,
+					top:pos.y,
+				});
+				// 创建大图图层
+				$(this).find('#bigBox').remove();
+				//计算大图位置
+				var posLeft=-pos.x/0.6;
+				var posTop=-pos.y/0.6;
+				$('<div/>',{id:'bigBox'}).appendTo(this).css({
+					position:"absolute",
+					left:360,
+					top:0,
+					width:350,
+					height:450,
+					background:'url('+bigImg+')',
+					backgroundRepeat:'no-repeat',
+					backgroundPosition: posLeft+'px '+posTop+'px'
+				});
+				return false;
+			}).mouseleave(function(){
+				$(this).find('div#smallbox').remove();
+			});
+		}
+	});
+	$(function(){
+		$('.scale').preview();
+	});
+	</script>
+	<style>
+		.scale{
+			width:350px;
+			height:450px;
+			margin:0 auto;
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	<div class="scale">
+		<img src="img/small.jpg" data-big="img/big.jpg"/>
+	</div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+.box{margin:200px 200px;
+	perspective:500;
+	-webkit-perspective:500;
+	perspective-origin: 0% 50%;
+	-webkit-perspective-origin: 0% 50%;
+	 /*animation-delay: 1s*/
+	}
+	.stage{
+		width:100px;
+		height: 100px;
+		position: relative;
+		-webkit-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		/*transform: rotateY(30deg) rotateX(30deg);*/
+		-webkit-animation: rotate 8s infinite;
+          animation: rotate 8s infinite;
+	}
+.box .stage .name{
+	width:100%;
+	height: 100%;
+	position: absolute;
+}
+.box .stage .nameA{
+	background: red;
+	-webkit-transform:translateZ(100px);
+	transform:translateZ(100px);
+}
+.box .stage .nameB{
+	background: green;
+	-webkit-transform: rotateY(90deg) translateZ(100px);
+	transform: rotateY(90deg) translateZ(100px);
+}
+.box .stage .nameC{
+	background: blue;
+	-webkit-transform: rotateY(-90deg) translateZ(100px);
+	transform: rotateY(-90deg) translateZ(100px);
+}
+.box .stage .nameD{
+	background: darkmagenta;
+	-webkit-transform: rotateX(90deg) translateZ(100px);
+	transform: rotateX(90deg) translateZ(100px);
+}
+.box .stage .nameE{
+	background: lawngreen;
+	-webkit-transform: rotateX(-90deg) translateZ(100px);
+	transform: rotateX(-90deg) translateZ(100px);
+}
+.box .stage .nameF{
+	background: firebrick;
+	-webkit-transform translateZ(-100px);
+	transform: translateZ(-100px);
+}
+@keyframes rotate{
+	0%{
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		transform: rotateX(0deg) rotateY(0deg)
+	}
+	50%{
+		-webkit-transform: rotateX(360deg) rotateY(0deg);
+		transform: rotateX(360deg) rotateY(0deg)
+	}
+	100%{
+		-webkit-transform: rotateX(360deg) rotateY(360deg);
+		transform: rotateX(360deg) rotateY(360deg)
+	}
+}
+@-webkit-keyframes{
+	0%{
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		transform: rotateX(0deg) rotateY(0deg)
+	}
+	50%{
+		-webkit-transform: rotateX(360deg) rotateY(0deg);
+		transform: rotateX(360deg) rotateY(0deg)
+	}
+	100%{
+		-webkit-transform: rotateX(360deg) rotateY(360deg);
+		transform: rotateX(360deg) rotateY(360deg)
+	}
+}
+
+
+

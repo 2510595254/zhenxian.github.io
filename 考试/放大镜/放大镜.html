@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>放大镜</title>
+	<style type="text/css">
+		*{
+			margin:0px;
+			padding:0px;
+		}
+		.small{margin:100px; 
+			position: relative;
+			width:350px;
+			height:449px;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+	<div class="small">
+		<img src="small.jpg" data-bg="big.jpg"/>
+	</div>
+	
+	<script>
+		$(function(){
+			$('.small').mouseenter(function(e){
+				$('<div></div>').appendTo(this).css({
+					background:'rgba(255,255,0,0.5)',
+					width:100,
+					height:100,
+					position:'absolute',
+					zIndex:2,
+					top:0,
+					left:0
+				});
+			}).mousemove(function(e){
+					var bigPath=$(this).find('img').data('bg');
+					var left =e.pageX-150;
+					var top  =e.pageY-150;
+					if(left<0) left=0;
+					if(top<0) top=0;
+					if(left>250) left=250;
+					if(top>349) top=349;
+					console.log(e.pageX,e.pageY);
+					$(this).find('div').css({
+						left:left,
+						top:top
+					});
+					var bleft= -(left/0.6);
+					var btop= -(top/0.6);
+					$(this).nextAll().remove();
+					//计算区域
+					$('<div/>').insertAfter(this).css({
+						width:500,
+						height:450,
+						position:'absolute',
+						top:100,
+						left:450,
+						background:'url('+bigPath+') no-repeat center center',
+						backgroundPosition:bleft+'px '+btop+'px'
+					});
+
+			}).mouseleave(function(){
+				$(this).find('div').remove();
+				$(this).nextAll().remove();
+			});
+
+		});
+	</script>
+</body>
+</html>

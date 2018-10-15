@@ -1,0 +1,124 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	text-decoration: none;
+	color: white;
+}
+.log1 {
+	font-size: 30px;
+}
+
+.log2 {
+	font-size: 14px;
+}
+
+.shouye a:hover {
+	color: #e0c69b;
+}
+
+.box {
+	width: 100%;
+	font-family: "felix titling";
+	overflow: hidden;
+}
+
+.content {
+	width: 100%;
+	height: 70px;
+	background: #080810;
+	color: white;
+	position: relative;
+	position: fixed;
+	z-index: 99;
+}
+
+.log {
+	
+	width: 200px;
+	float: left;
+	height: 70px;
+	margin-left: 100px;
+}
+
+.shouye {
+	float: left;
+	height: 70px;
+	position: absolute;
+	left: 350px;
+	width: 500px;
+}
+
+.shouye li {
+	float: left;
+	line-height: 70px;
+	margin-left: 50px;
+	font-size: 18px;
+}
+
+.denglu a:hover {
+	color: #e0c69b;
+}
+
+.denglu {
+	color: white;
+	float: left;
+	width: 300px;
+	position: absolute;
+	left: 1050px;
+	height: 70px;
+}
+
+.denglu li{
+	float:left;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+.content2 {
+	width: 100%;
+	height: 675px;
+	color: #FFFFFF;
+	position: relative;
+	margin-top: 70px;
+	background-image: url(../img/banner.jpg);
+}
+
+.content2 .chahua {
+	position: absolute;
+	top: 160px;
+	left: 200px;
+}
+
+.content2 .chahua span {
+	font-size: 34px;
+	font-weight: bold;
+	letter-spacing: 5px;
+}
+
+.content2 .chahua p {
+	letter-spacing: 5px;
+	margin-top: 20px;
+}
+
+.content2 .chahua .xiangqing {
+	width: 140px;
+	height: 50px;
+	background: #000000;
+	text-align: center;
+	line-height: 50px;
+	margin-top: 20px;
+	letter-spacing: 10px;
+}
+
+.content2 .xiaotu img {
+	position: absolute;
+	left: 924px;
+	bottom: 0px;
+}

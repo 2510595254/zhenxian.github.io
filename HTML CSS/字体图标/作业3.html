@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<span class="box b1"></span>
+		<span class="box b2"></span>
+		<span class="box b3"></span>
+		<style>
+			@font-face {
+				font-family:"bdfont";
+				src: url(img/bdfont.ttf);
+			}
+			.box::before{
+				font-family: "bdfont";
+				font-size: 50px;
+				color: aqua;
+			}
+			.box.b1::before{
+				content:"\e001";
+			}
+			.box.b2::before{
+				content:"\e002";
+			}
+			.box.b3::before{
+				content:"\e003";
+			}
+		</style>
+	</body>
+</html>

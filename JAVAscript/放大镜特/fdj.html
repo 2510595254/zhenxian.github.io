@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0px;
+			padding: 0px;
+		}
+		#fdj{margin:100px 100px;}
+		.xiaotu{
+			width: 350px;
+			height: 450px;
+			border: 1px solid black;
+			float:left;
+			position: relative;
+		}
+		.xiaotu div{
+			width: 100px;
+			height: 100px;
+			background-color:rgba(255,255,0,0.3);
+			position: absolute;
+			top:0px;
+			left: 0px;
+			display: none;
+			cursor:move;
+			/*z-index: 99px;*/
+		}
+		#datu{
+			width: 450px;
+			height: 450px;
+			border: 1px solid black;
+			float: left;
+			display: none;
+			overflow:hidden;
+			position: relative;
+		}
+		#datu img{
+			display: block;
+			position: absolute;
+			 
+		}
+	</style>
+</head>
+<body>
+	<div id="fdj">
+		<div class="xiaotu">
+		<img src="img/small.jpg" alt="">
+		<div id="pop"></div>
+		</div>
+		<div id="datu">
+			<img src="img/big.jpg" alt=""width="1575"
+			height="2025">
+		</div>
+	</div>
+</body>
+	<script>
+		var picsmall=document.getElementsByClassName("xiaotu")[0]
+		var box=document.getElementById("pop")
+		var datu=document.getElementById("datu")	
+		var picbig=datu.children[0]
+		picsmall.onmouseover=function(){
+			box.style.display='block'
+			datu.style.display='block'
+			window.onmousemove=function(eve)
+			{
+				var ev=eve||window.event
+				var  boxX=picsmall.offsetLeft
+				var boxY=picsmall.offsetTop
+				var x=ev.clientX-boxX-box.offsetWidth/2
+				var y=ev.clientY-boxY-box.offsetHeight/2
+				if(x<0){
+					x=0
+				}else if(x>picsmall.offsetWidth-box.offsetWidth)
+				{
+					x=picsmall.offsetWidth-box.offsetWidth
+				}if(y<0)
+				{
+					y=0
+				}else if(y>picsmall.offsetHeight-box.offsetHeight)
+				{
+					y=picsmall.offsetHeight-box.offsetHeight
+				}
+				box.style.left=x+"px"
+				box.style.top=y+"px"
+				picbig.style.left=-x*4.5+"px"
+				picbig.style.top=-y*4.5+"px"
+			}
+		}	
+		picsmall.onmouseout=function(){
+			box.style.display="none"
+			datu.style.display="none"
+			window.onmousemove=null
+		}
+	</script>
+</html>

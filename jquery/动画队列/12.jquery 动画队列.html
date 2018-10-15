@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动画队列</title>
+	<style>
+	div{
+		width:500px;
+		height:500px;
+		background:#F00;
+	}
+	</style>
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+	<div>
+		
+	</div>
+	<script>
+	$(function(){
+		$('div').hide(2000);
+		$('div').fadeIn(2000);
+		$('div').slideUp(2000);
+		$('div').slideDown(2000);
+		setInterval(function(){
+			var c=$('div').queue();
+			console.log('c==>',c);
+		},1000);
+
+	});
+	</script>
+</body>
+</html>

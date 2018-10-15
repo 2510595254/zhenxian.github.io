@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #box{
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            border: 10px dotted green;
+            position: relative;
+            overflow: hidden;
+        }
+        ul{
+            width: 500%;
+            height: 200px;
+            position: absolute;
+        }
+        ul li{
+            list-style: none;
+            width: 200px;
+            height:200px;
+            float: left;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        #arr{
+            width: 100%;
+            height: 40px;
+            position: absolute;
+            top: 50%;
+            margin-top: -20px;
+
+        }
+        #left , #right{
+            width: 40px;
+            height: 40px;
+            background: rgba(0,0,0,.5);
+            font-family: '黑体';
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        #left{
+            float: left;
+            margin-left: 10px;
+        }
+        #right{
+            float: right;
+            margin-right: 10px;
+        }
+        ol{
+            text-align: center;
+            position: absolute;
+            bottom: 10px;
+        }
+        ol li {
+            list-style: none;
+            display: inline-block;
+            /*padding: 5px;*/
+            width: 20px;
+            height:20px;
+            /*color: white;*/
+            background: white;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="box">
+    <ul>
+        <li><img src="images/1.jpg" alt=""></li>
+        <li><img src="images/2.jpg" alt=""></li>
+        <li><img src="images/3.jpg" alt=""></li>
+        <li><img src="images/4.jpg" alt=""></li>
+        <li><img src="images/1.jpg" alt=""></li>
+    </ul>
+    <div id="arr">
+        <div id="left"> < </div>
+        <div id="right"> > </div>
+    </div>
+    <ol>
+        <li style='background: red'>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ol>
+</div>
+<script src='moveTo.js'></script>
+<script>
+    window.onload = function () {
+
+        var ol = document.getElementsByTagName('ol')[0]
+        var ul = document.getElementsByTagName('ul')[0]
+        var box = document.getElementById('box')
+        var olLis = ol.children
+
+        var left = document.getElementById('left')
+        var right = document.getElementById('right')
+
+        var clickNum = 0
+        var colorNum = 0
+        var timer = null
+
+        for(var i = 0;i<olLis.length;i++){
+            olLis[i].index = i
+            olLis[i].onmouseover = function () {
+                for(var j = 0;j<olLis.length;j++){
+                    olLis[j].style.background = 'white'
+                }
+                this.style.background = 'red'
+
+                var long = this.index*-200
+                moveTo(ul,long)
+                colorNum = clickNum =  this.index
+            }
+        }
+
+        left.onclick = function () {
+            clickNum++
+            colorNum++
+
+            if(colorNum >3 ){
+                colorNum = 0
+            }
+            if(clickNum > 4){
+                ul.style.left = '0px'
+                clickNum = 1
+            }
+            moveTo(ul,-200*clickNum)
+
+            for(var j = 0;j<olLis.length;j++){
+                olLis[j].style.background = 'white'
+            }
+            olLis[colorNum].style.background = 'red'
+        }
+
+        right.onclick = function () {
+            clickNum--
+            colorNum--
+            if(colorNum < 0 ){
+                colorNum = 3
+            }
+            if(clickNum < 0){
+                ul.style.left = '-800px'
+                clickNum = 3
+
+            }
+            moveTo(ul,-200*clickNum)
+
+            for(var j = 0;j<olLis.length;j++){
+                olLis[j].style.background = 'white'
+            }
+            olLis[colorNum].style.background = 'red'
+        }
+
+        autoPlay()
+        box.onmouseover = function () {
+            clearInterval(timer)
+        }
+        box.onmouseout = function () {
+            autoPlay()
+        }
+
+        function autoPlay () {
+            timer = setInterval(function () {
+                clickNum++
+                colorNum++
+
+                if(colorNum >3 ){
+                    colorNum = 0
+                }
+                if(clickNum > 4){
+                    ul.style.left = '0px'
+                    clickNum = 1
+                }
+                moveTo(ul,-200*clickNum)
+
+                for(var j = 0;j<olLis.length;j++){
+                    olLis[j].style.background = 'white'
+                }
+                olLis[colorNum].style.background = 'red'
+            },1000)
+        }
+
+
+    }
+</script>
+</body>
+</html>
