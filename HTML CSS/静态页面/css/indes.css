@@ -68,16 +68,16 @@ a {
 }
 
 .denglu {
-	color: white;
-	float: left;
 	width: 300px;
+	height: 70px;
+	float: left;
 	position: absolute;
 	left: 1050px;
-	height: 70px;
+	
 }
 
 .denglu li{
-	float:left;
+	float: left;
 	margin-left: 30px;
 	margin-top: 20px;
 }
