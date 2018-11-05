@@ -1,0 +1,2539 @@
+*{
+	margin:0;
+	padding: 0;
+}
+.container{
+	width:100%;
+	height:auto;
+	font-family:"felix titling";
+}
+.nav{
+	width:100%;
+	height:70px;
+	background-color:#080810;
+	color:white;
+	position: fixed;
+	z-index: 999;
+}
+.nav_left{
+	width:300px;
+	height:70px;
+	float:left;
+	position: relative;
+}
+.logo_top{
+	width:100px;
+	color:white;
+	padding-left:55px;
+	padding-top:8px;
+	font-size: 30px;
+	font-family:"felix titling";
+}
+.logo_bottom{
+	width:100px;
+	height:30px;
+	color:white;
+	padding-left:55px;
+	font-size: 10px;
+	font-family:"felix titling";
+}
+ul{
+	list-style: none;
+}
+.a{
+	text-decoration: none;
+	color: white;
+}
+.nav_center{
+	width:600px;
+	height:70px;
+	float: left;
+	font-size:18px;
+	font-family:"felix titling";
+	position: absolute;
+	left:300px;
+}
+.nav_center ul li a{
+	text-decoration:none;
+}
+.home_page{
+	float: left;
+	color: #e0c69b;
+	width:40px;
+	height:70px;
+	line-height:70px;
+}
+.course{
+	float: left;
+	color: white;
+	width:40px;
+	height:70px;
+	line-height:70px;
+	margin-left: 50px;
+}
+.vocational_ke{
+	float: left;
+	color: white;
+	width:80px;
+	height:70px;
+	line-height:70px;
+	margin-left: 50px;
+}
+.community{
+	float: left;
+	color: white;
+	width:40px;
+	height:70px;
+	line-height:70px;
+	margin-left: 50px;
+}
+.course:hover .a{
+	color: #e0c69b;
+}
+.vocational_ke:hover .a{
+	color:#e0c69b;
+}
+.community:hover .a{
+	color: #e0c69b;
+}
+.nav_right{
+	width:300px;
+	height:70px;
+	float:right;
+	position: absolute;
+	left:1080px;
+}
+.icon{
+	width:25px;
+	height:25px;
+	float:left;
+}
+.icon a{
+	margin-left: 40px;
+}
+.icon_baise{
+	margin-top: 24px;
+}
+.icon_huangse{
+	position: absolute;
+	left: 40px;
+	top:24px;
+	display: none;
+}
+.icon_a:hover .icon_huangse{
+	display: block;
+}
+.icon_a:hover .icon_baise{
+	display: none;
+}
+.login_zhuce{
+	float: left;
+	color: white;
+	width:28px;
+	height:70px;
+	font-size: 14px;
+	line-height:70px;
+	margin-left: 96px;
+}
+
+.vertical_line{
+	float: left;
+	color: white;
+	height:70px;
+	font-size: 14px;
+	line-height:70px;
+	padding: 0px 10px;
+}
+.login_denglu{
+	float: left;
+	color: white;
+	width:28px;
+	height:70px;
+	font-size: 14px;
+	line-height:70px;
+}
+.login_zhuce a{
+	color:white;
+	text-decoration: none;
+}
+.login_denglu a{
+	color:white;
+	text-decoration: none;
+}
+.login_zhuce:hover a{
+	color:#e0c69b;
+}
+.login_denglu:hover a{
+	color:#e0c69b;
+}
+.banner{
+	width:100%;
+	height:675px;
+	color:white;
+	position: absolute;
+	top:70px;
+	background-image:url(../img/banner.jpg);
+}
+.banner_txt{
+	width:350px;
+	height:167px;
+	position: absolute;
+	top:150px;
+	left:200px;
+}
+.banner .banner_txt span{
+	color: #fff;
+    letter-spacing:5px;
+    padding-bottom: 23px;
+    font-weight: bold;
+    font-size: 34px;
+}
+.banner .banner_txt p{
+	color: #fff;
+    letter-spacing:5px;
+    padding-bottom: 23px;
+    font-size:16px;
+    padding-top:20px;
+}
+.banner .banner_txt a{
+	color: #fff;
+    font-size:18px;
+    letter-spacing:9px;
+    padding:15px 15px;
+    position: absolute;
+    top:120px;
+    text-decoration: none;
+    background: #080810;
+}
+.banner .banner_txt:hover a{
+	color:#e0c69b;
+}
+.banner_img{
+	width:400px;
+	height:340px;
+	position: absolute;
+	top:347px;
+	left:765px;
+}
+.img{
+	width:100%;
+	height:675px;
+}
+.menu{
+	width:100%;
+	height:200px;
+	color:white;
+	position: absolute;
+	top:745px;
+}
+.free{   /*   免费好课*/
+	width:200px;
+	height:200px;
+	color:#666666;
+	margin-left:300px;
+	float:left;
+	position: absolute;
+	top:10px;
+}
+.free_icon{
+	width:200px;
+	margin-top:65px;
+}
+.free_font{
+	width:80px;
+	height:30px;
+	font-size:20px ;
+	padding-top:6px ;
+}
+.free_font a{
+	color:#666666;
+	text-decoration: none;
+}
+.free_font:hover a{
+	color:#e0c69b;
+}
+.college{        /*   学院课程*/
+	width:200px;
+	height:200px;
+	color:#666666;
+	margin-left:60px;
+	float:left;
+	position:absolute;
+	top:10px;
+	left:450px;
+}
+.college_icon{
+	width:200px;
+	margin-top:65px;
+	margin-left:10px;
+}
+.college_font{
+	width:80px;
+	height:30px;
+	font-size:20px ;
+	padding-top:6px ;
+}
+.college_font a{
+	color:#666666;
+	text-decoration: none;
+}
+.college_font:hover a{
+	color:#e0c69b;
+}
+.occupation{        /*   职业好课*/
+	width:200px;
+	height:200px;
+	color:#666666;
+	margin-left:60px;
+	float:left;
+	position:absolute;
+	top:10px;
+	left:670px;
+}
+.occupation_icon{
+	width:200px;
+	margin-top:65px;
+}
+.occupation_font{
+	width:80px;
+	height:30px;
+	font-size:20px ;
+	padding-top:6px ;
+}
+.occupation_font a{
+	color:#666666;
+	text-decoration: none;
+}
+.occupation_font:hover a{
+	color:#e0c69b;
+}
+.download{        /*   下载APP*/
+	width:200px;
+	height:200px;
+	color:#666666;
+	margin-left:50px;
+	float:left;
+	position:absolute;
+	top:10px;
+	left:860px;
+}
+.download_icon{
+	width:200px;
+	margin-top:65px;
+}
+.download_font{
+	width:80px;
+	height:30px;
+	font-size:20px ;
+	padding-top:6px ;
+}
+.download_font a{
+	color:#666666;
+	text-decoration: none;
+}
+.download_font:hover a{
+	color:#e0c69b;
+}
+.free_jieshao{   /*   免费好课的介绍*/
+	width:100%;
+	height:900px;
+	color:black;
+	position: absolute;
+	top:945px;
+}
+.Free_class{    /*   免费好课的上面字体部分*/
+	width:100%;
+	height:140px;
+	position: absolute;
+}
+.font_COURSE{        /*   免费好课的灰色字体*/
+	width:100%;
+	height:140px;
+	color:#f5f5f5;
+	position: absolute;
+    text-align: center;
+    font-size:80px ;
+    z-index: -88;
+}
+.title_free{       /*   免费好课的标题部分*/
+	width:100%;
+	height:140px;
+    text-align: center;
+    position: absolute;
+}
+
+.free_haoke{
+	font-size:30px ;
+	padding-top:10px;
+	position: absolute;
+	left:620px;
+}
+.dominator_neirong{
+	font-size:20px ;
+	letter-spacing:20px;
+	padding-top:10px;
+	position:absolute;
+	left:520px;
+	top:50px;
+}
+.classify{
+	width:100%;
+	height:800px;
+}
+.classify_one{   /*   免费好课的课程介绍   */
+	width:100%;
+	height:320px;
+	position: absolute;
+	top:100px;
+    text-align: center;
+}
+.after{         /*   免费好课的课程介绍    after */
+	width:282px;
+	height:320px;
+	margin: 48px 0px 0px 55px;
+	float:left;
+	position: absolute;
+}
+.after:hover {
+	box-shadow: 4px 6px 10px #808080;
+}
+.after_img{
+	width:282px;
+	height:182px;
+}
+.after_kemu{
+	width:282px;
+	height:35px;
+	text-align: center;
+	padding-top:17px;
+	font-size:20px;
+}
+.after_kemu a{
+	color:black;
+	text-decoration: none;
+}
+.after_kemu:hover a{
+	color:#e0c69b;
+}
+.after_jiangshi{
+	width:282px;
+	height:55px;
+}
+.after_touxiang{
+	float:left;
+	width:55px;
+	height:55px;
+	padding-left:20px;
+}
+.after_jiangshiming{
+	float:left;
+	color:gray;
+	line-height: 55px;
+	padding-left:10px;
+}
+.after_jiangshiming a{
+	color:black;
+	text-decoration: none;
+}
+.after_jiangshiming:hover a{
+	color:#e0c69b;
+}
+.PS{         /*   免费好课的课程介绍    PS */
+	width:282px;
+	height:320px;
+	margin: 48px 0px 0px 34px;
+	float:left;
+	position: absolute;
+	left:340px;
+}
+.PS:hover {
+	box-shadow: 4px 6px 10px #808080;
+}
+.PS_img{
+	width:282px;
+	height:182px;
+}
+.PS_kemu{
+	width:282px;
+	height:35px;
+	text-align: center;
+	padding-top:17px;
+	font-size:20px;
+}
+.PS_kemu a{
+	color:black;
+	text-decoration: none;
+}
+.PS_kemu:hover a{
+	color:#e0c69b;
+}
+.PS_jiangshi{
+	width:282px;
+	height:55px;
+}
+.PS_touxiang{
+	float:left;
+	width:55px;
+	height:55px;
+	padding-left:20px;
+}
+.PS_jiangshiming{
+	float:left;
+	color:gray;
+	line-height: 55px;
+	padding-left:10px;
+}
+.PS_jiangshiming a{
+	color:black;
+	text-decoration: none;
+}
+.PS_jiangshiming:hover a{
+	color:#e0c69b;
+}
+.AI{         /*   免费好课的课程介绍   AI */
+	width:282px;
+	height:320px;
+	margin:48px 0px 0px 34px;
+	float:left;
+	position: absolute;
+	left:660px;
+}
+.AI:hover {
+	box-shadow: 4px 6px 10px #808080;
+}
+.AI_img{
+	width:282px;
+	height:182px;
+}
+.AI_kemu{
+	width:282px;
+	height:35px;
+	text-align: center;
+	padding-top:17px;
+	font-size:20px;
+}
+.AI_kemu a{
+	color:black;
+	text-decoration: none;
+}
+.AI_kemu:hover a{
+	color:#e0c69b;
+}
+.AI_kemu a{
+	color:black;
+	text-decoration: none;
+}
+.AI_kemu:hover a{
+	color:#e0c69b;
+}
+.AI_jiangshi{
+	width:282px;
+	height:55px;
+}
+.AI_touxiang{
+	float:left;
+	width:55px;
+	height:55px;
+	padding-left:20px;
+}
+.AI_jiangshiming{
+	float:left;
+	color:gray;
+	line-height: 55px;
+	padding-left:10px;
+}
+.AI_jiangshiming a{
+	color:black;
+	text-decoration: none;
+}
+.AI_jiangshiming:hover a{
+	color:#e0c69b;
+}
+.max{         /*   免费好课的课程介绍   3d  MAX */
+	width:282px;
+	height:320px;
+	margin: 48px 0px 0px 34px;
+	float:left;
+	position: absolute;
+	left:980px;
+}
+.max:hover {
+	box-shadow: 4px 6px 10px #808080;
+}
+.max_img{
+	width:282px;
+	height:182px;
+}
+.max_kemu{
+	width:282px;
+	height:35px;
+	text-align: center;
+	padding-top:17px;
+	font-size:20px;
+}
+.max_kemu a{
+	color:black;
+	text-decoration: none;
+}
+.max_kemu:hover a{
+	color:#e0c69b;
+}
+.max_jiangshi{
+	width:282px;
+	height:55px;
+}
+.max_touxiang{
+	float:left;
+	width:55px;
+	height:55px;
+	margin-left:20px;
+	border-radius:50%;
+}
+.max_jiangshiming{
+	float:left;
+	color:gray;
+	line-height: 55px;
+	padding-left:10px;
+}
+.max_jiangshiming a{
+	color:black;
+	text-decoration: none;
+}
+.max_jiangshiming:hover a{
+	color:#e0c69b;
+}
+.classify_two{   /*   免费好课的课程介绍   第二排  */
+	width:100%;
+	height:320px;
+	position: absolute;
+	top:480px;
+    text-align: center;
+}
+.basis{         /*   免费好课的课程介绍   3d  MAX室内设计基础 */
+	width:282px;
+	height:320px;
+	margin: 40px 0px 0px 55px;
+	float:left;
+	position: absolute;
+}
+.basis:hover {
+	box-shadow: 4px 6px 10px #808080;
+}
+.basis_img{
+	width:282px;
+	height:182px;
+	background-color:antiquewhite;
+}
+.basis_kemu{
+	width:282px;
+	height:35px;
+	text-align: center;
+	padding-top:17px;
+	font-size:20px;
+}
+.basis_kemu a{
+	color:black;
+	text-decoration: none;
+}
+.basis_kemu:hover a{
+	color:#e0c69b;
+}
+.basis_jiangshi{
+	width:282px;
+	height:55px;
+}
+.basis_touxiang{
+	float:left;
+	width:55px;
+	height:55px;
+	padding-left:20px;
+}
+.basis_jiangshiming{
+	float:left;
+	color:gray;
+	line-height: 55px;
+	padding-left:10px;
+}
+.basis_jiangshiming a{
+	color:black;
+	text-decoration: none;
+}
+.basis_jiangshiming:hover a{
+	color:#e0c69b;
+}
+.Vray{         /*   免费好课的课程介绍   Vrva室内设计 */
+	width:282px;
+	height:320px;
+	margin: 40px 0px 0px 34px;
+	float:left;
+	position: absolute;
+	left:340px;
+}
+.Vray:hover {
+	box-shadow: 4px 6px 10px #808080;
+}
+.Vray_img{
+	width:282px;
+	height:182px;
+	background-color:antiquewhite;
+}
+.Vray_kemu{
+	width:282px;
+	height:35px;
+	text-align: center;
+	padding-top:17px;
+	font-size:20px;
+}
+.Vray_kemu a{
+	color:black;
+	text-decoration: none;
+}
+.Vray_kemu:hover a{
+	color:#e0c69b;
+}
+.Vray_jiangshi{
+	width:282px;
+	height:55px;
+}
+.Vray_touxiang{
+	float:left;
+	width:55px;
+	height:55px;
+	padding-left:20px;
+}
+.Vray_jiangshiming{
+	float:left;
+	color:gray;
+	line-height: 55px;
+	padding-left:10px;
+}
+.Vray_jiangshiming a{
+	color:black;
+	text-decoration: none;
+}
+.Vray_jiangshiming:hover a{
+	color:#e0c69b;
+}
+.Advanced{         /*   免费好课的课程介绍   3d  MAX室内设计进阶 */
+	width:282px;
+	height:320px;
+	margin: 40px 0px 0px 34px;
+	float:left;
+	position: absolute;
+	left:660px;
+}
+.Advanced:hover {
+	box-shadow: 4px 6px 10px #808080;
+}
+.Advanced_img{
+	width:282px;
+	height:182px;
+	background-color:antiquewhite;
+}
+.Advanced_kemu{
+	width:282px;
+	height:35px;
+	text-align: center;
+	padding-top:17px;
+	font-size:20px;
+}
+.Advanced_kemu a{
+	color:black;
+	text-decoration: none;
+}
+.Advanced_kemu a{
+	color:black;
+	text-decoration: none;
+}
+.Advanced_kemu:hover a{
+	color:#e0c69b;
+}
+.Advanced_touxiang{
+	float:left;
+	width:55px;
+	height:55px;
+	padding-left:20px;
+}
+.Advanced_jiangshiming{
+	float:left;
+	color:gray;
+	line-height: 55px;
+	padding-left:10px;
+}
+.Advanced_jiangshiming a{
+	color:black;
+	text-decoration: none;
+}
+.Advanced_jiangshiming:hover a{
+	color:#e0c69b;
+}
+
+.public{         /*   免费好课的课程介绍   3d  MAX室内表现 */
+	width:282px;
+	height:320px;
+	margin: 40px 0px 0px 34px;
+	float:left;
+	position: absolute;
+	left:980px;
+}
+.public:hover {
+	box-shadow: 4px 6px 10px #808080;
+}
+.public_img{
+	width:282px;
+	height:182px;
+	background-color:antiquewhite;
+}
+.public_kemu{
+	width:282px;
+	height:35px;
+	text-align: center;
+	padding-top:17px;
+	font-size:20px;
+}
+.public_kemu a{
+	color:black;
+	text-decoration: none;
+}
+.public_kemu:hover a{
+	color:#e0c69b;
+}
+.public_jiangshi{
+	width:282px;
+	height:55px;
+}
+.public_touxiang{
+	float:left;
+	width:55px;
+	height:55px;
+	margin-left:20px;
+	border-radius:50%;
+}
+.public_jiangshiming{
+	float:left;
+	color:gray;
+	line-height: 55px;
+	padding-left:10px;
+}
+.public_jiangshiming a{
+	color:black;
+	text-decoration: none;
+}
+.public_jiangshiming:hover a{
+	color:#e0c69b;
+}
+.free_more{         /*   获取更多免费好课的课程介绍   */
+	width:135px;
+	height:40px;
+	position: absolute;
+	top:900px;
+}
+.click_free{         /*   获取更多免费好课的课程介绍   */
+	background-color:black;
+	position: absolute;
+	left:620px;
+	color:white;
+	width:135px;
+	text-align:center;
+	line-height:40px;
+}
+.free_more:hover div{
+	background-color:#e0c69b;
+}
+.occupation_jieshao{   /*   职业直通的介绍*/
+	width:100%;
+	height:1780px;
+	color:black;
+	position: absolute;
+	top:1930px;
+}
+.occupation_classify{    /*   职业直通的上面字体部分*/
+	width:100%;
+	height:140px;
+	position: absolute;
+}
+.occupation_COURSE{        /*   职业直通的灰色字体*/
+	width:100%;
+	height:140px;
+	color:#f5f5f5;
+	position:absolute;
+    text-align: center;
+    font-size:80px ;
+    z-index: -88;
+}
+.occupation_free{       /*   职业直通的标题部分*/
+	width:100%;
+	height:140px;
+    text-align: center;
+    position: absolute;
+}
+
+.occupation_haoke{
+	font-size:30px ;
+	padding-top:10px;
+	position: absolute;
+	left:620px;
+}
+.promote_jiaxin{
+	font-size:20px ;
+	letter-spacing:20px;
+	padding-top:10px;
+	position:absolute;
+	left:570px;
+	top:50px;
+}
+.occupation_xiangqing{
+	width:100%;
+	height:1760px;
+	position: absolute;
+	top:140px;
+}
+.UI{      /*   职业直通的 的 UI视觉设计师*/
+	width:1126px;
+	height:380px;
+	position: absolute;
+	left:120px;
+}
+.UI:hover {
+	box-shadow:4px 6px 10px #808080;
+}
+.UI_left{
+	width:540px;
+	height:380px;
+	position: absolute;
+	float:left;
+}
+.UI_img{
+	width:502px;
+	height:325px;
+	padding: 17px 0px 0px 33px;
+}
+.UI_right{
+	width:586px;
+	height:380px;
+	position: absolute;
+	left:540px;
+}
+.UI_edit{
+	width:586px;
+	height:50px;
+	position:absolute;
+}
+.UI_edit_icon{
+	width:24px;
+	height:30px;
+	float:left;
+	padding: 27px 0px 0px 30px;
+}
+.UI_edit_font{
+	width:70px;
+	height:20px;
+	float:left;
+	color:#E0C69B;
+	margin:30px 0px 0px 15px;
+}
+.ui_big{
+	width:300px;
+	height:40px;
+	font-size: 22px;
+	padding:70px 0px 0px 30px;
+}
+.UI_right:hover .ui_big{
+	color:#e0c69b;
+}
+.ui_small{
+	width:586px;
+	height:150px;
+	padding:15px 0px 0px 30px;
+	line-height:30px;
+	color:#666666;
+}
+.ui_see{
+	width:135px;
+	height:40px;
+	color:#666666;
+	line-height: 40px;
+	text-align:center;
+	margin:40px 0px 0px 30px;
+	border:1px solid #717171;
+}
+.cutting{      /*   职业直通的 的 剪辑与后期设计师*/
+	width:1126px;
+	height:380px;
+	position: absolute;
+	left:120px;
+	top:380px;
+}
+.cutting:hover {
+	box-shadow:4px 6px 10px #808080;
+}
+.cutting_left{
+	width:586px;
+	height:380px;
+	position: absolute;
+	float:left;
+}
+.cutting_edit{
+	width:586px;
+	height:50px;
+	position:absolute;
+}
+.cutting_edit_icon{
+	width:24px;
+	height:30px;
+	float:left;
+	margin: 27px 0px 0px 30px;
+}
+.cutting_edit_font{
+	width:70px;
+	height:20px;
+	float:left;
+	color:#E0C69B;
+	margin:30px 0px 0px 15px;
+}
+.cutting_big{
+	width:300px;
+	height:40px;
+	font-size:22px;
+	padding:70px 0px 0px 30px;
+}
+.cutting_right:hover .cutting_big{
+	color:#e0c69b;
+}
+.cutting_small{
+	width:586px;
+	height:150px;
+	padding:15px 0px 0px 30px;
+	line-height:30px;
+	color:#666666;
+}
+.cutting_see{
+	width:135px;
+	height:40px;
+	color:#666666;
+	line-height: 40px;
+	text-align:center;
+	margin:40px 0px 0px 400px;
+	border:1px solid #717171;
+}
+.cutting_right{
+	width:540px;
+	height:380px;
+	position: absolute;
+	float:left;
+	left:586px;
+}
+.cutting_img{
+	width:502px;
+	height:325px;
+	padding: 17px 0px 0px 33px;
+}
+.totipotent{      /*   职业直通的 的 全能室内设计师*/
+	width:1126px;
+	height:380px;
+	position: absolute;
+	left:120px;
+	top:760px;
+}
+.totipotent:hover {
+	box-shadow:4px 6px 10px #808080;
+}
+.totipotent_left{
+	width:540px;
+	height:380px;
+	position: absolute;
+	float:left;
+}
+.totipotent_img{
+	width:502px;
+	height:325px;
+	padding: 17px 0px 0px 33px;
+}
+.totipotent_right{
+	width:586px;
+	height:380px;
+	position: absolute;
+	left:540px;
+}
+.totipotent_edit{
+	width:586px;
+	height:50px;
+	position:absolute;
+}
+.totipotent_edit_icon{
+	width:24px;
+	height:30px;
+	float:left;
+	padding: 27px 0px 0px 30px;
+}
+.totipotent_edit_font{
+	width:70px;
+	height:20px;
+	float:left;
+	color:#E0C69B;
+	margin:30px 0px 0px 15px;
+}
+.totipotent_big{
+	width:300px;
+	height:40px;
+	font-size: 22px;
+	padding:70px 0px 0px 30px;
+}
+.totipotent_right:hover .ui_big{
+	color:#e0c69b;
+}
+.totipotent_small{
+	width:586px;
+	height:150px;
+	padding:15px 0px 0px 30px;
+	line-height:30px;
+	color:#666666;
+}
+.totipotent_see{
+	width:135px;
+	height:40px;
+	color:#666666;
+	line-height: 40px;
+	text-align:center;
+	margin:40px 0px 0px 30px;
+	border:1px solid #717171;
+}
+.business{      /*   职业直通的 的 剪辑与后期设计师*/
+	width:1126px;
+	height:380px;
+	position: absolute;
+	left:120px;
+	top:1140px;
+}
+.business:hover {
+	box-shadow:4px 6px 10px #808080;
+}
+.business_left{
+	width:586px;
+	height:380px;
+	position: absolute;
+	float:left;
+}
+.business_edit{
+	width:586px;
+	height:50px;
+	position:absolute;
+}
+.business_edit_icon{
+	width:24px;
+	height:30px;
+	float:left;
+	margin: 27px 0px 0px 30px;
+}
+.business_edit_font{
+	width:70px;
+	height:20px;
+	float:left;
+	color:#E0C69B;
+	margin:30px 0px 0px 15px;
+}
+.business_big{
+	width:300px;
+	height:40px;
+	font-size:22px;
+	padding:70px 0px 0px 30px;
+}
+.business_right:hover .cutting_big{
+	color:#e0c69b;
+}
+.business_small{
+	width:586px;
+	height:150px;
+	padding:15px 0px 0px 30px;
+	line-height:30px;
+	color:#666666;
+}
+.business_see{
+	width:135px;
+	height:40px;
+	color:#666666;
+	line-height: 40px;
+	text-align:center;
+	margin:40px 0px 0px 400px;
+	border:1px solid #717171;
+}
+.business_right{
+	width:540px;
+	height:380px;
+	position: absolute;
+	float:left;
+	left:586px;
+}
+.business_img{
+	width:502px;
+	height:325px;
+	padding: 17px 0px 0px 33px;
+}
+.occupation_more{         /*   获取更多免费好课的课程介绍   */
+	width:135px;
+	height:40px;
+	position: absolute;
+	top:1600px;
+}
+.click_occupation{         /*   获取更多职业直通的课程介绍   */
+	background-color:black;
+	position: absolute;
+	left:620px;
+	color:white;
+	width:135px;
+	text-align:center;
+	line-height:40px;
+}
+.occupation_more:hover div{
+	background-color:#e0c69b;
+}
+.occupation_jieshao{   /*   职业直通的介绍*/
+	width:100%;
+	height:1780px;
+	color:black;
+	position: absolute;
+	top:1930px;
+}
+.classify_college{      /*   分类学院的介绍*/
+	width:100%;
+	height:850px;
+	position: absolute;
+	top:3800px;
+}
+.college_classify{    /*   分类学院的上面字体部分*/
+	width:100%;
+	height:140px;
+	position: absolute;
+}
+.college_COURSE{        /*   分类学院的灰色字体*/
+	width:100%;
+	height:140px;
+	color:#f5f5f5;
+	position:absolute;
+    text-align: center;
+    font-size:80px ;
+    z-index: -88;
+}
+.college_free{       /*   分类学院的标题部分*/
+	width:100%;
+	height:140px;
+    position: absolute;
+}
+
+.college_haoke{
+	font-size:30px ;
+	padding-top:10px;
+	position: absolute;
+	left:620px;
+}
+.special_zhuanxue{
+	font-size:20px ;
+	letter-spacing:20px;
+	padding-top:10px;
+	position:absolute;
+	left:610px;
+	top:50px;
+}
+.classify_jieshao{     /*   分类学院的文字加图片*/
+	width:100%;
+	height:680px;
+	position: absolute;
+	top:150px;
+} 
+.classify_top{    /*   分类学院的文字部分*/
+	width:100%;
+	height:40px;
+	position: absolute;
+}
+.classify_font{
+	width:855px;
+	height:20px;
+	font-size:18px;
+	position: absolute;
+	left:255px;
+	top:10px;
+	line-height:20px;
+}
+.font_all{
+	width:40px;
+	height:20px;
+	float:left;
+}
+.font_all a{
+	color:#e0c69b;
+	text-decoration: none;
+}
+.font_IT{
+	width:110px;
+	height:20px;
+	float:left;
+	margin-left:55px;
+}
+.font_IT a{
+	color:black;
+	text-decoration: none;
+}
+.font_IT:hover a{
+	color:#e0c69b;
+}
+.font_Movies{
+	width:110px;
+	height:20px;
+	float:left;
+	margin-left:55px;
+}
+.font_Movies a{
+	color:black;
+	text-decoration: none;
+}
+.font_Movies:hover a{
+	color:#e0c69b;
+}
+.font_game{
+	width:110px;
+	height:20px;
+	float:left;
+	margin-left:55px;
+}
+.font_game a{
+	color:black;
+	text-decoration: none;
+}
+.font_game:hover a{
+	color:#e0c69b;
+}
+.font_ui{
+	width:100px;
+	height:20px;
+	float:left;
+	margin-left:55px;
+}
+.font_ui a{
+	color:black;
+	text-decoration: none;
+}
+.font_ui:hover a{
+	color:#e0c69b;
+}
+.font_indoor{
+	width:110px;
+	height:20px;
+	float:left;
+	margin-left:55px;
+}
+.font_indoor a{
+	color:black;
+	text-decoration: none;
+}
+.font_indoor:hover a{
+	color:#e0c69b;
+}
+.classify_bottom{   /*   分类学院的图片介绍部分*/
+	width:100%;
+	height:640px;
+	position: absolute;
+	top:50px;
+	border-top:4px solid #e0c69b;
+	background-image:url(../img/classify.png);
+}
+.classify_xiangqing{   /*   分类学院的图片详情部分*/
+	width:950px;
+	height:300px;
+	position: absolute;
+	top:120px;
+	left:208px;
+}
+.classify_beautiful{   /*   分类学院的第一张图片详情部分*/
+	width:282px;
+	height:300px;
+	float:left;
+}
+.beautiful_img{
+	width:282px;
+	height:180px;
+}
+.font_beautiful{
+	width:220px;
+	height:16px;
+	font-size: 16px;
+	padding:19px 0px 0px 30px;
+}
+.font_beautiful a{
+	color:#e0c69b;
+	text-decoration: none;
+}
+.font_beautiful:hover a{
+	color:#d3b98e;
+	text-decoration:underline;
+}
+.font_zheshi{
+	width:300px;
+	height:16px;
+	font-size: 15px;
+	padding:19px 0px 0px 0px;
+}
+.font_zheshi a{
+	color:white;
+	text-decoration: none;
+}
+.font_damo{
+	width:40px;
+	height:16px;
+	font-size: 16px;
+	padding:19px 0px 0px 121px;
+}
+.font_damo a{
+	color:white;
+	text-decoration: none;
+}
+.font_damo:hover a{
+	color:#d3b98e;
+	text-decoration:underline;
+}
+.classify_move{   /*   分类学院的第二张图片详情部分*/
+	width:282px;
+	height:300px;
+	float:left;
+	margin-left:27px;
+}
+.move_img{
+	width:282px;
+	height:180px;
+}
+.font_move{
+	width:210px;
+	height:16px;
+	font-size: 16px;
+	padding:19px 0px 0px 30px;
+}
+.font_move a{
+	color:#e0c69b;
+	text-decoration: none;
+}
+.font_move:hover a{
+	color:#d3b98e;
+	text-decoration:underline;
+}
+.font_bentao{
+	width:300px;
+	height:16px;
+	font-size: 15px;
+	padding:19px 0px 0px 0px;
+}
+.font_bentao a{
+	color:white;
+	text-decoration: none;
+}
+.font_han{
+	width:50px;
+	height:16px;
+	font-size: 16px;
+	padding:19px 0px 0px 121px;
+}
+.font_han a{
+	color:white;
+	text-decoration: none;
+}
+.font_han:hover a{
+	color:#d3b98e;
+	text-decoration:underline;
+}
+.classify_maya{   /*   分类学院的第三张图片详情部分*/
+	width:282px;
+	height:300px;
+	float:left;
+	margin-left:27px;
+}
+.maya_img{
+	width:282px;
+	height:180px;
+}
+.font_maya{
+	width:180px;
+	height:16px;
+	font-size: 16px;
+	padding:19px 0px 0px 51px;
+}
+.font_maya a{
+	color:#e0c69b;
+	text-decoration: none;
+}
+.font_maya:hover a{
+	color:#d3b98e;
+	text-decoration:underline;
+}
+.font_xuexi{
+	width:300px;
+	height:16px;
+	font-size: 15px;
+	padding:19px 0px 0px 0px;
+}
+.font_xuexi a{
+	color:white;
+	text-decoration: none;
+}
+.font_wu{
+	width:50px;
+	height:16px;
+	font-size: 16px;
+	padding:19px 0px 0px 121px;
+}
+.font_wu a{
+	color:white;
+	text-decoration: none;
+}
+.font_wu:hover a{
+	color:#d3b98e;
+	text-decoration:underline;
+}
+.classify_more{         /*   获取更多分类学院的课程介绍   */
+	width:135px;
+	height:40px;
+	position: absolute;
+	top:500px;
+	
+}
+.click_classify{         /*   获取更多分类学院的课程介绍   */
+	background-color:black;
+	position: absolute;
+	left:620px;
+	color:white;
+	width:135px;
+	text-align:center;
+	line-height:40px;
+	border: 1px solid #e0c69b;;
+}
+.click_classify a{
+	color:white;
+	text-decoration: none;
+}
+
+.click_classify:hover a{
+	color:#000000;
+	padding:9px 48px 9px 48px;
+	background-color:#e0c69b;
+}
+.Newest{      /*   最新视频的部分*/
+	width:100%;
+	height:500px;
+	position: absolute;
+	top:4700px;
+}
+.Newest_video{    /*   最新视频的上面字体部分*/
+	width:100%;
+	height:140px;
+	position: absolute;
+}
+.font_VIDRO{        /*   最新视频的灰色字体*/
+	width:100%;
+	height:140px;
+	color:#f5f5f5;
+	position: absolute;
+    text-align: center;
+    font-size:80px ;
+    z-index: -88;
+}
+.title_Newest{       /*   最新视频的标题部分*/
+	width:100%;
+	height:140px;
+    text-align: center;
+    position: absolute;
+}
+
+.font_Newest{
+	font-size:30px ;
+	padding-top:10px;
+	position: absolute;
+	left:620px;
+}
+.master_Newest{
+	font-size:20px ;
+	letter-spacing:20px;
+	padding-top:10px;
+	position:absolute;
+	left:535px;
+	top:50px;
+}
+.Newest_jieshao{
+	width:100%;
+	height: 560px;
+	position: absolute;
+	top:140px;
+}
+.Newest_diyipai{      /*   最新视频的详情的第一排部分*/
+	width:1056px;
+	height:188px;
+	position:absolute;
+	left:182px;
+}
+.c4d_city{      /*   最新视频的详情的第一个*/
+	width:210px;
+	height:188px;
+	position: absolute;
+}
+.city_img{
+	width:210px;
+	height:120px;
+	position: absolute;
+	z-index:-100;
+}
+.city_time{
+	width:70px;
+	height:30px;
+	position: relative;
+	top:70px;
+	line-height:30px;
+	text-align: center;
+	background-color:rgba(0,0,0,0.5);
+}
+.city_time a{
+	color:white;
+	text-decoration:none;
+}
+.city_font{
+	height:68px;
+	position:relative;
+	top:90px;
+	background-color:#f6f6f6;
+}
+.city_font_top{
+	height:30px;
+	padding-left:12px;
+	padding-top:12px;
+	font-size:15px;
+}
+.city_font_top a{
+	color:black;
+	text-decoration:none;
+}
+.city_font_bottom{
+	height:38px;
+}
+.city_see{
+	float:left;
+	padding-left:12px;
+	font-size:12px;
+}
+.city_see a{
+	color:black;
+	text-decoration:none;
+}
+.city_complete{
+	float:right;
+	padding-right:12px;
+	font-size:12px;
+}
+.city_complete a{
+	color:black;
+	text-decoration:none;
+}
+.c4d_cabin1{      /*   最新视频的详情的第二个*/
+	width:210px;
+	height:188px;
+	position: absolute;
+	left:264px;
+}
+.cabin1_img{
+	width:210px;
+	height:120px;
+	position: absolute;
+	z-index:-100;
+}
+.cabin1_time{
+	width:70px;
+	height:30px;
+	position: relative;
+	top:70px;
+	line-height:30px;
+	text-align: center;
+	color:white;
+	background-color:rgba(0,0,0,0.5);
+}
+.cabin1_time a{
+	color:white;
+	text-decoration:none;
+}
+.cabin1_font{
+	height:68px;
+	position:relative;
+	top:90px;
+	background-color:#f6f6f6;
+}
+.cabin1_font_top{
+	height:30px;
+	padding-left:12px;
+	padding-top:12px;
+	font-size:15px;
+}
+.cabin1_font_top a{
+	color:black;
+	text-decoration:none;
+}
+.cabin1_font_bottom{
+	height:38px;
+}
+.cabin1_see{
+	float:left;
+	padding-left:12px;
+	font-size:12px;
+}
+.cabin1_see a{
+	color:black;
+	text-decoration:none;
+}
+.cabin1_complete{
+	float:right;
+	padding-right:12px;
+	font-size:12px;
+}
+.cabin1_complete a{
+	color:black;
+	text-decoration:none;
+}
+.c4d_cabin2{      /*   最新视频的详情的第三个*/
+	width:210px;
+	height:188px;
+	position: absolute;
+	left:528px;
+}
+.cabin2_img{
+	width:210px;
+	height:120px;
+	position: absolute;
+	z-index:-100;
+}
+.cabin2_time{
+	width:70px;
+	height:30px;
+	position: relative;
+	top:70px;
+	line-height:30px;
+	text-align: center;
+	color:white;
+	background-color:rgba(0,0,0,0.5);
+}
+.cabin2_time a{
+	color:white;
+	text-decoration:none;
+}
+.cabin2_font{
+	height:68px;
+	position:relative;
+	top:90px;
+	background-color:#f6f6f6;
+}
+.cabin2_font_top{
+	height:30px;
+	padding-left:12px;
+	padding-top:12px;
+	font-size:15px;
+}
+.cabin2_font_top a{
+	color:black;
+	text-decoration:none;
+}
+.cabin2_font_bottom{
+	height:38px;
+}
+.cabin2_see{
+	float:left;
+	padding-left:12px;
+	font-size:12px;
+}
+.cabin2_see a{
+	color:black;
+	text-decoration:none;
+}
+.cabin2_complete{
+	float:right;
+	padding-right:12px;
+	font-size:12px;
+}
+.cabin2_complete a{
+	color:black;
+	text-decoration:none;
+}
+.ps_koutu{      /*   最新视频的详情的第四个*/
+	width:210px;
+	height:188px;
+	position: absolute;
+	left:792px;
+}
+.koutu_img{
+	width:210px;
+	height:120px;
+	position: absolute;
+	z-index:-100;
+}
+.ps_time{
+	width:70px;
+	height:30px;
+	position: relative;
+	top:70px;
+	line-height:30px;
+	text-align: center;
+	color:white;
+	background-color:rgba(0,0,0,0.5);
+}
+.ps_time a{
+	color:white;
+	text-decoration:none;
+}
+.ps_font{
+	height:68px;
+	position:relative;
+	top:90px;
+	background-color:#f6f6f6;
+}
+.ps_font_top{
+	height:30px;
+	padding-left:12px;
+	padding-top:12px;
+	font-size:15px;
+}
+.ps_font_top a{
+	color:black;
+	text-decoration:none;
+}
+.ps_font_bottom{
+	height:38px;
+}
+.ps_see{
+	float:left;
+	padding-left:12px;
+	font-size:12px;
+}
+.ps_see a{
+	color:black;
+	text-decoration:none;
+}
+.ps_complete{
+	float:right;
+	padding-right:12px;
+	font-size:12px;
+}
+.ps_complete a{
+	color:black;
+	text-decoration:none;
+}
+.Newest_more{         /*   获取更多最新视频的课程介绍   */
+	width:135px;
+	height:40px;
+	position: absolute;
+	top:242px;
+	
+}
+.click_Newest{         /*   获取更多最新视频的课程介绍   */
+	background-color:black;
+	position: absolute;
+	left:620px;
+	color:white;
+	width:135px;
+	text-align:center;
+	line-height:40px;
+	border: 1px solid #e0c69b;;
+}
+.click_Newest a{
+	color:white;
+	text-decoration: none;
+}
+
+.click_Newest:hover a{
+	color:#000000;
+	padding:9px 48px 9px 48px;
+	background-color:#e0c69b;
+}
+.excellent{     /*   优秀讲师*/
+	width:100%;
+	height:700px;
+	position: absolute;
+	top:5200px;
+	background-image:url(../img/one.png);
+}
+.excellent_top{    /*   优秀老师的上面字体部分*/
+	width:100%;
+	height:140px;
+	position: absolute;
+}
+.font_TEACHER{        /*   优秀老师的灰色字体*/
+	width:100%;
+	height:140px;
+	position: absolute;
+    text-align: center;
+    font-size:80px ;
+    color:#414141;
+    z-index: 0;
+}
+.title_excellent{       /*   优秀老师的标题部分*/
+	width:100%;
+	height:140px;
+	color:white;
+    text-align: center;
+    position: absolute;
+}
+
+.font_excellent{
+	font-size:30px ;
+	padding-top:10px;
+	position: absolute;
+	left:620px;
+}
+.Giant_excellent{
+	font-size:20px ;
+	letter-spacing:3px;
+	padding-top:10px;
+	position:absolute;
+	left:535px;
+	top:50px;
+}
+
+.excellent_xiangqing{    /*   优秀老师的图片介绍部分*/
+	width:1056px;
+	height:345px;
+	position: absolute;
+	left:182px;
+	top:140px;
+}
+.excellent_fat{     /*   优秀老师的黑白胖子部分*/
+	width:231px;
+	height:345px;
+	float:left;
+	background-image:url(../img/pangzi1.png);
+}
+.fat_img{
+	width:103px;
+	height:103px;
+	padding-top:40px;
+	padding-left:64px;
+}
+.fat_mingzi{
+	width:116px;
+	height:40px;
+	text-align: center;
+	line-height: 40px;
+	background-color:rgba(141,127,113,0.4);
+	border-radius:20px;
+	color:white;
+	margin:20px 0px 0px 57px;
+}
+.fat_banian{
+	width:130px;
+	height:55px;
+	text-align: center;
+	border-radius:20px;
+	color:white;
+	margin:20px 0px 0px 57px;
+}
+.excellent_fairy{     /*   优秀老师的小精灵部分*/
+	width:231px;
+	height:345px;
+	float:left;
+	margin-left:25px;
+	background-image:url(../img/jingling.png);
+}
+.fairy_img{
+	width:103px;
+	height:103px;
+	padding-top:40px;
+	padding-left:64px;
+}
+.fairy_mingzi{
+	width:116px;
+	height:40px;
+	text-align: center;
+	line-height: 40px;
+	background-color:rgba(141,127,113,0.4);
+	border-radius:20px;
+	color:white;
+	margin:20px 0px 0px 57px;
+}
+.fairy_banian{
+	width:130px;
+	height:55px;
+	text-align: center;
+	border-radius:20px;
+	color:white;
+	margin:20px 0px 0px 57px;
+}
+.excellent_Bear{     /*   优秀老师的熊二部分*/
+	width:231px;
+	height:345px;
+	float:left;
+	margin-left:25px;
+	background-image:url(../img/xionger.png);
+}
+.Bear_img{
+	width:103px;
+	height:103px;
+	padding-top:40px;
+	padding-left:64px;
+}
+.Bear_mingzi{
+	width:116px;
+	height:40px;
+	text-align: center;
+	line-height: 40px;
+	background-color:rgba(141,127,113,0.4);
+	border-radius:20px;
+	color:white;
+	margin:20px 0px 0px 57px;
+}
+.Bear_banian{
+	width:130px;
+	height:55px;
+	text-align: center;
+	border-radius:20px;
+	color:white;
+	margin:20px 0px 0px 57px;
+}
+.excellent_day{     /*   优秀老师的七天部分*/
+	width:231px;
+	height:345px;
+	float:left;
+	margin-left:25px;
+	background-image:url(../img/qitian.png);
+}
+.day_img{
+	width:103px;
+	height:103px;
+	padding-top:40px;
+	padding-left:64px;
+}
+.day_mingzi{
+	width:116px;
+	height:40px;
+	text-align: center;
+	line-height: 40px;
+	background-color:rgba(141,127,113,0.4);
+	border-radius:20px;
+	color:white;
+	margin:20px 0px 0px 57px;
+}
+.day_banian{
+	width:130px;
+	height:55px;
+	text-align: center;
+	border-radius:20px;
+	color:white;
+	margin:20px 0px 0px 57px;
+}
+.excellent_more{         /*   获取更多优秀老师的介绍   */
+	width:135px;
+	height:40px;
+	position: absolute;
+	top:600px;
+}
+.click_excellent{         /*   获取更多优秀老师的介绍   */
+	background-color:black;
+	position: absolute;
+	left:620px;
+	color:white;
+	width:135px;
+	text-align:center;
+	line-height:40px;
+	border: 1px solid #e0c69b;;
+}
+.click_excellent a{
+	color:white;
+	text-decoration: none;
+}
+
+.click_excellent:hover a{
+	color:#000000;
+	padding:9px 48px 9px 48px;
+	background-color:#e0c69b;
+}
+.student{      /*   优秀学员的部分*/
+	width:100%;
+	height:500px;
+	position: absolute;
+	top:5960px;
+}
+.student_top{    /*   优秀学员的上面字体部分*/
+	width:100%;
+	height:140px;
+	position: absolute;
+}
+.font_STUDENT{        /*   优秀学员的灰色字体*/
+	width:100%;
+	height:140px;
+	color:#f5f5f5;
+	position: absolute;
+    text-align: center;
+    font-size:80px ;
+    z-index:-1;
+}
+.title_student{       /*   优秀学员的标题部分*/
+	width:100%;
+	height:140px;
+	color:#000000;
+    text-align: center;
+    position: absolute;
+}
+
+.font_student{
+	font-size:30px ;
+	padding-top:10px;
+	position: absolute;
+	left:620px;
+}
+.Giant_student{
+	font-size:20px ;
+	letter-spacing:5px;
+	padding-top:10px;
+	position:absolute;
+	left:570px;
+	top:50px;
+}
+.student_jieshao{    /*   优秀学员的下边图片部分*/
+	width:936px;
+	height:270px;
+	position: absolute;
+	left:215px;
+	top:140px;
+}
+.student_mars{   /*   优秀学员的第一个学员部分*/
+	width:135px;
+	height:220px;
+	float:left;
+}
+.student_img{
+	width:103px;
+	height:103px;
+	margin-left:16px;
+	margin-top:16px;
+	border-radius:50%;
+}
+.student_font{
+	width:135px;
+	height:58px;
+	text-align: center;
+}
+.font_mars{
+	width:135px;
+	height:18px;
+	font-size:14px;
+	padding-top:10px;
+	letter-spacing:2px;
+}
+.mars_integral{
+	width:135px;
+	height:18px;
+	font-size:12px;
+	padding-top:20px;
+	letter-spacing:4px;
+}
+.student_stone{   /*   优秀学员的第二个学员部分*/
+	width:135px;
+	height:220px;
+	float:left;
+	margin-left:120px;
+}
+.stone_img{
+	width:103px;
+	height:103px;
+	margin-left:16px;
+	margin-top:16px;
+	border-radius:50%;
+}
+.stone_font{
+	width:135px;
+	height:58px;
+	text-align: center;
+}
+.font_stone{
+	width:135px;
+	height:18px;
+	font-size:14px;
+	padding-top:10px;
+	letter-spacing:2px;
+}
+.stone_integral{
+	width:135px;
+	height:18px;
+	font-size:12px;
+	padding-top:20px;
+	letter-spacing:4px;
+}
+.student_flower{   /*   优秀学员的第三个学员部分*/
+	width:135px;
+	height:220px;
+	float:left;
+	margin-left:120px;
+}
+.flower_img{
+	width:103px;
+	height:103px;
+	margin-left:16px;
+	margin-top:16px;
+	border-radius:50%;
+}
+.flower_font{
+	width:135px;
+	height:58px;
+	text-align: center;
+}
+.font_flower{
+	width:135px;
+	height:18px;
+	font-size:14px;
+	padding-top:10px;
+	letter-spacing:2px;
+}
+.flower_integral{
+	width:135px;
+	height:18px;
+	font-size:12px;
+	padding-top:20px;
+	letter-spacing:4px;
+}
+.student_half{   /*   优秀学员的第四个学员部分*/
+	width:135px;
+	height:220px;
+	float:left;
+	margin-left:120px;
+}
+.half_img{
+	width:103px;
+	height:103px;
+	margin-left:16px;
+	margin-top:16px;
+	border-radius:50%;
+}
+.half_font{
+	width:135px;
+	height:58px;
+	text-align: center;
+}
+.font_half{
+	width:135px;
+	height:18px;
+	font-size:14px;
+	padding-top:10px;
+	letter-spacing:2px;
+}
+.half_integral{
+	width:135px;
+	height:18px;
+	font-size:12px;
+	padding-top:20px;
+	letter-spacing:4px;
+}
+.student_more{         /*   获取更多优秀学员的介绍   */
+	width:135px;
+	height:40px;
+	position: absolute;
+	top:400px;
+}
+.click_student{         /*   获取更多优秀学员的介绍   */
+	background-color:black;
+	position: absolute;
+	left:620px;
+	color:white;
+	width:135px;
+	text-align:center;
+	line-height:40px;
+	border: 1px solid #e0c69b;;
+}
+.click_student a{
+	color:white;
+	text-decoration: none;
+}
+
+.click_student:hover a{
+	color:#000000;
+	padding:9px 48px 9px 48px;
+	background-color:#e0c69b;
+}
+.last{   /*   最后一个部分*/
+	width:100%;
+	height:358px;
+	position:absolute;
+	top:6500px;
+	background-color:#15152a;
+}
+.last_top{   /*   最后一个部分  上边部分*/
+	width:1200px;
+	height:200px;
+	position: absolute;
+	left:55px;
+	top:40px;
+	border-bottom: 1px solid rgba(188,198,208,0.4);
+}
+.last_top_logo{   /*   最后一个部分  上边部分*/
+	width:84px;
+	height:23px;
+	margin-left:100px;
+	float:left;
+}
+.last_top_font{   /*   最后一个部分  上边部分*/
+	width:878px;
+	height:153px;
+	margin-left:100px;
+	float:left;
+}
+.last_problem{     /*   最后一个部分  遇到问题的文字部分*/
+	width:114px;
+	height:153px;
+	float:left;
+	display:inline-block;
+	letter-spacing:2px;
+}
+.last_problem a{
+	color:#999;
+	text-decoration:none ;
+}
+.last_yudao{
+	width:114px;
+	height:21px;
+	padding-top: 5px;
+    font-size: 14px;
+    line-height: 16px;
+    color:#fff;
+}
+.last_yudao:hover a{
+	color:#E0C69B;
+}
+
+.last_fuwu{
+	width:60px;
+	height:13px;
+	display: block;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height:13px;
+   
+}
+.last_fuwu:hover a{
+	color:#E0C69B;
+}
+.last_zhiliang{
+	width:60px;
+	height:13px;
+	display: block;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height:13px;
+}
+.last_zhiliang:hover a{
+	color:#E0C69B;
+}
+.last_yijian{
+	width:60px;
+	height:13px;
+	display: block;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height:13px;
+}
+.last_yijian:hover a{
+	color:#E0C69B;
+}
+.last_help{
+	width:60px;
+	height:13px;
+	display: block;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height:13px;
+}
+.last_help:hover a{
+	color:#E0C69B;
+}
+.last_about{ 
+	width:114px;
+	height:153px;
+	float:left;
+	display:inline-block;
+	letter-spacing:2px;
+}
+.last_about a{
+	color:#999;
+	text-decoration:none ;
+}
+.about_us{    /*   最后一个部分  右边文字加图标部分*/
+	width:204px;
+	height:91px;
+	float:right;
+	color:#fff;
+}
+.about_us h3{    /*   最后一个部分  右边文字部分*/
+	font-size:16px;
+}
+.about_icon{
+	width:220px;
+	height:37px;
+	margin-top:40px;
+}
+.about_icon_qq{
+	float:left;
+	width:40px;
+	height:40px;
+	background-image:url(../img/qq.png);
+}
+.about_icon_qq_two{
+	background-image:url(../img/qq1.png);
+}
+.about_icon_weixin{
+	float:left;
+	width:40px;
+	height:40px;
+	margin-left:16px;
+	background-image:url(../img/weixin.png);
+}
+.about_icon_weixin_two{
+	background-image:url(../img/weixin1.png);
+}
+.about_icon_weibo{
+	float:left;
+	width:40px;
+	height:40px;
+	margin-left:16px;
+	background-image:url(../img/weibo1.png);
+}
+.about_icon_weibo_two{
+	background-image:url(../img/weibo.png);
+}
+.about_icon_shouji{
+	float:left;
+	width:40px;
+	height:40px;
+	margin-left:16px;
+	background-image:url(../img/shouji.png);
+}
+.about_icon_shouji_two{
+	background-image:url(../img/shouji1.png);
+}
+.last_link{   /*   最后一个部分  下边部分*/
+	width:1200px;
+	height:63px;
+	position: absolute;
+	left:55px;
+	top:250px;
+	border-bottom: 1px solid rgba(188,198,208,0.4);
+}
+.link_left{
+	width:70px;
+	height:14px;
+	float:left;
+	line-height: 14px;
+    display: inline-block;
+    margin-left: 100px;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.last_link_font{   /*   最后一个部分  下边文字部分*/
+	width:878px;
+	height:66px;
+	margin-left:100px;
+	float:left;
+}
+.last_link_font a{
+	color:#999;
+	text-decoration: none;
+}
+.last_link_huo{
+	width:36px;
+	height:13px;
+	float:left;
+    font-size: 12px;
+    line-height:13px;
+}
+.last_link_huo:hover a{
+	color:#E0C69B;
+}
+.last_link_zai{
+	display: inline-block;
+    margin-left: 50px;
+    width:84px;
+    float:left;
+	height:13px;
+    font-size: 12px;
+    line-height:13px;
+}
+.last_link_zai:hover a{
+	color:#E0C69B;
+}
+.last_link_yujia{
+	display: inline-block;
+    margin-left:50px;
+    width:60px;
+    float:left;
+	height:13px;
+    font-size: 12px;
+    line-height:13px;
+}
+.last_link_yujia:hover a{
+	color:#E0C69B;
+}
+.last_link_dang{
+	display: inline-block;
+    margin-left:50px;
+    width:60px;
+    float:left;
+	height:13px;
+    font-size: 12px;
+    line-height:13px;
+}
+.last_link_dang:hover a{
+	color:#E0C69B;
+}
+.last_link_zikao{
+	display: inline-block;
+    margin-left:50px;
+    width:48px;
+    float:left;
+	height:13px;
+    font-size: 12px;
+    line-height:13px;
+}
+.last_link_zikao:hover a{
+	color:#E0C69B;
+}
+.last_link_ACA{
+	display: inline-block;
+    margin-left:50px;
+    width:61px;
+    float:left;
+	height:13px;
+    font-size: 12px;
+    line-height:13px;
+}
+.last_link_ACA:hover a{
+	color:#E0C69B;
+}
+.last_link_shang{
+	display: inline-block;
+    margin-left:50px;
+    width:72px;
+    float:left;
+	height:13px;
+    font-size: 12px;
+    line-height:13px;
+}
+.last_link_shang:hover a{
+	color:#E0C69B;
+}
+.last_link_lang{
+	display: inline-block;
+	margin-top:10px;
+    width:60px;
+    float:left;
+	height:13px;
+    font-size: 12px;
+    line-height:13px;
+}
+.last_link_lang:hover a{
+	color:#E0C69B;
+}
+.last_zuihou{
+	display: block;
+    font-size: 12px;
+    line-height: 23px;
+    transform: scale(0.9);
+    color: #999;
+    position: absolute;
+    top:320px;
+    left:110px;
+}

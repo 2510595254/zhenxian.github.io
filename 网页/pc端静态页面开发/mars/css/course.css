@@ -1,0 +1,1271 @@
+*{
+	margin:0;
+	padding:0;
+}
+.container{
+	width:100%;
+	height:auto;
+	font-family:"felix titling";
+}
+.nav{
+	width:100%;
+	height:70px;
+	background-color:#080810;
+	color:white;
+	position: fixed;
+	z-index: 999;
+}
+.nav_left{
+	width:300px;
+	height:70px;
+	float:left;
+	position: relative;
+}
+.logo_top{
+	width:100px;
+	color:white;
+	padding-left:55px;
+	padding-top:8px;
+	font-size: 30px;
+	font-family:"felix titling";
+}
+.logo_bottom{
+	width:100px;
+	height:30px;
+	color:white;
+	padding-left:55px;
+	font-size: 10px;
+	font-family:"felix titling";
+}
+ul{
+	list-style: none;
+}
+.a{
+	text-decoration: none;
+	color: white;
+}
+.nav_center{
+	width:600px;
+	height:70px;
+	float: left;
+	font-size:18px;
+	font-family:"felix titling";
+	position: absolute;
+	left:300px;
+}
+.nav_center ul li a{
+	text-decoration:none;
+}
+.home_page{
+	float: left;
+	color: #e0c69b;
+	width:40px;
+	height:70px;
+	line-height:70px;
+}
+.course{
+	float: left;
+	color: white;
+	width:40px;
+	height:70px;
+	line-height:70px;
+	margin-left: 50px;
+}
+.vocational_ke{
+	float: left;
+	color: white;
+	width:80px;
+	height:70px;
+	line-height:70px;
+	margin-left: 50px;
+}
+.community{
+	float: left;
+	color: white;
+	width:40px;
+	height:70px;
+	line-height:70px;
+	margin-left: 50px;
+}
+.home_page:hover .a{
+	color: #e0c69b;
+}
+.vocational_ke:hover .a{
+	color:#e0c69b;
+}
+.community:hover .a{
+	color: #e0c69b;
+}
+.nav_right{
+	width:300px;
+	height:70px;
+	float:right;
+	position: absolute;
+	left:1080px;
+}
+.icon{
+	width:25px;
+	height:25px;
+	float:left;
+}
+.icon a{
+	margin-left: 40px;
+}
+.icon_baise{
+	margin-top: 24px;
+}
+.icon_huangse{
+	position: absolute;
+	left: 40px;
+	top:24px;
+	display: none;
+}
+.icon_a:hover .icon_huangse{
+	display: block;
+}
+.icon_a:hover .icon_baise{
+	display: none;
+}
+.login_zhuce{
+	float: left;
+	color: white;
+	width:28px;
+	height:70px;
+	font-size: 14px;
+	line-height:70px;
+	margin-left: 96px;
+}
+
+.vertical_line{
+	float: left;
+	color: white;
+	height:70px;
+	font-size: 14px;
+	line-height:70px;
+	padding: 0px 10px;
+}
+.login_denglu{
+	float: left;
+	color: white;
+	width:28px;
+	height:70px;
+	font-size: 14px;
+	line-height:70px;
+}
+.login_zhuce a{
+	color:white;
+	text-decoration: none;
+}
+.login_denglu a{
+	color:white;
+	text-decoration: none;
+}
+.login_zhuce:hover a{
+	color:#e0c69b;
+}
+.login_denglu:hover a{
+	color:#e0c69b;
+}
+.title{   /*学院  专业分类部分*/
+	width: 100%;
+	height:200px;
+	background-color:#252525;
+	position: relative;
+	top: 70px;
+	padding-bottom: 20px;
+}
+.title_college{    /*学院  分类部分*/
+	width: 1260px;
+	height:56px;
+	line-height:56px;
+}
+.title_college em{
+	width: 36px;
+	height:17px;
+	margin-top:100px;
+	margin:40px 0px 0px 55px;
+	color: #999;
+	font-size: 12px;
+}
+.title_college a.college_quanbu{
+	color: #E0C69B;
+}
+.title_college a{
+	width: 36px;
+	height:17px;
+	margin:22px 0px 0px 29px;
+	color: #fff;
+	text-decoration:none;
+	font-size: 12px;
+}
+.title div a:hover{
+	color: #E0C69B;
+}
+.title_major{     /*专业  分类部分*/
+	width:1260px;
+	height:210px;
+	line-height:40px;
+}
+.major_left{
+	width:36px;
+	height:17px;
+	margin:0px 0px 0px 55px;
+	color: #999;
+	float:left;
+	font-size: 12px;
+}
+.major_right{
+	width: 1100px;
+	height:210px;
+	float:left;
+	margin-left:6px;
+	font-size:12px;
+}
+.title_major a.major_quanbu{
+	color: #E0C69B;
+}
+.major_right a{
+	width: 36px;
+	height:17px;
+	margin-left:29px;
+	color: #fff;
+	text-decoration:none;
+	font-size: 12px;
+}
+.title div a:hover{
+	color: #E0C69B;
+}
+.content{/*课程介绍部分*/
+	width: 100%;
+	height:1182px;
+	background-color:white;
+	position:absolute;
+	top:320px;
+}
+.content_top{/*课程介绍的分类文字部分部分*/
+	width:1186px;
+	height:20px;
+	position: relative;
+	left:40px;
+}
+.type_left{
+	width:590px;
+	color:#999;
+	float:left;
+}
+.type_left span{
+	width: 36px;
+	height:17px;
+	margin-top:100px;
+	margin:40px 0px 0px 40px;
+	color: #999;
+	font-size: 12px;
+}
+.type_left a{
+	width: 36px;
+	height:17px;
+	margin:22px 0px 0px 20px;
+	color: #999;
+	text-decoration:none;
+	font-size: 12px;
+}
+.content_top div a:hover{
+	color: #E0C69B;
+}
+.type_right{
+	width:590px;
+	line-height:20px;
+	float: right;
+}
+.type_right span{
+	width: 36px;
+	height:17px;
+	margin-top:100px;
+	margin:40px 0px 0px 40px;
+	color:#E0C69B;
+	font-size: 12px;
+	padding-left:400px;
+}
+.type_right a{
+	width: 36px;
+	height:17px;
+	margin:22px 0px 0px 20px;
+	color: #999;
+	text-decoration:none;
+	font-size: 12px;
+}
+.content_top div a:hover{
+	color: #E0C69B;
+}
+.content_center{/*课程介绍的图片部分*/
+	width:1240px;
+	height:1100px;
+	position: relative;
+	left:40px;
+}
+.content_one{   /*   好课的课程介绍   */
+	width:100%;
+	height:320px;
+	position: absolute;
+	top:40px;
+    text-align: center;
+}
+.c4d{         /*   好课的课程介绍   c4d */
+	width:270px;
+	height:320px;
+	margin-left:40px;
+	float:left;
+	position: absolute;
+}
+.c4d:hover {
+	box-shadow: 4px 6px 10px #808080;
+}
+.c4d_img{
+	width:270px;
+	height:182px;
+}
+.c4d_kemu{
+	width:270px;
+	height:35px;
+	text-align: center;
+	padding-top:17px;
+	font-size:18px;
+}
+.c4d_kemu a{
+	color:black;
+	text-decoration: none;
+}
+.c4d_kemu:hover a{
+	color:#e0c69b;
+}
+.c4d_jiangshi{
+	width:270px;
+	height:55px;
+}
+.c4d_touxiang{
+	float:left;
+	width:55px;
+	height:55px;
+	padding-left:20px;
+}
+.c4d_jiangshiming{
+	float:left;
+	color:gray;
+	line-height: 55px;
+	padding-left:10px;
+}
+.c4d_jiangshiming a{
+	color:black;
+	text-decoration: none;
+}
+.c4d_jiangshiming:hover a{
+	color:#e0c69b;
+}
+.c4d_1{         /*   好课的课程介绍   c4d 1 */
+	width:270px;
+	height:320px;
+	float:left;
+	position: absolute;
+	left:350px;
+}
+.c4d_1:hover {
+	box-shadow: 4px 6px 10px #808080;
+}
+.c4d_1_img{
+	width:270px;
+	height:182px;
+}
+.c4d_1_kemu{
+	width:270px;
+	height:35px;
+	text-align: center;
+	padding-top:17px;
+	font-size:18px;
+}
+.c4d_1_kemu a{
+	color:black;
+	text-decoration: none;
+}
+.c4d_1_kemu:hover a{
+	color:#e0c69b;
+}
+.c4d_1_jiangshi{
+	width:270px;
+	height:55px;
+}
+.c4d_1_touxiang{
+	float:left;
+	width:55px;
+	height:55px;
+	padding-left:20px;
+}
+.c4d_1_jiangshiming{
+	float:left;
+	color:gray;
+	line-height: 55px;
+	padding-left:10px;
+}
+.c4d_1_jiangshiming a{
+	color:black;
+	text-decoration: none;
+}
+.c4d_1_jiangshiming:hover a{
+	color:#e0c69b;
+}
+.cutting{         /*   好课的课程介绍   cutting */
+	width:270px;
+	height:320px;
+	float:left;
+	position: absolute;
+	left:660px;
+}
+.cutting:hover {
+	box-shadow: 4px 6px 10px #808080;
+}
+.cutting_img{
+	width:270px;
+	height:182px;
+}
+.cutting_kemu{
+	width:270px;
+	height:35px;
+	text-align: center;
+	padding-top:17px;
+	font-size:18px;
+}
+.cutting_kemu a{
+	color:black;
+	text-decoration: none;
+}
+.cutting_kemu:hover a{
+	color:#e0c69b;
+}
+.cutting_kemu a{
+	color:black;
+	text-decoration: none;
+}
+.cutting_kemu:hover a{
+	color:#e0c69b;
+}
+.cutting_jiangshi{
+	width:270px;
+	height:55px;
+}
+.cutting_touxiang{
+	float:left;
+	width:55px;
+	height:55px;
+	padding-left:20px;
+}
+.cutting_jiangshiming{
+	float:left;
+	color:gray;
+	line-height: 55px;
+	padding-left:10px;
+}
+.cutting_jiangshiming a{
+	color:black;
+	text-decoration: none;
+}
+.cutting_jiangshiming:hover a{
+	color:#e0c69b;
+}
+.max{         /*   好课的课程介绍   3d  MAX */
+	width:270px;
+	height:320px;
+	float:left;
+	position:absolute;
+	left:970px;
+}
+.max:hover {
+	box-shadow: 4px 6px 10px #808080;
+}
+.max_img{
+	width:270px;
+	height:182px;
+}
+.max_kemu{
+	width:270px;
+	height:35px;
+	text-align: center;
+	padding-top:17px;
+	font-size:18px;
+}
+.max_kemu a{
+	color:black;
+	text-decoration: none;
+}
+.max_kemu:hover a{
+	color:#e0c69b;
+}
+.max_jiangshi{
+	width:270px;
+	height:55px;
+}
+.max_touxiang{
+	float:left;
+	width:55px;
+	height:55px;
+	padding-left:20px;
+}
+.max_jiangshiming{
+	float:left;
+	color:gray;
+	line-height: 55px;
+	padding-left:10px;
+}
+.max_jiangshiming a{
+	color:black;
+	text-decoration: none;
+}
+.max_jiangshiming:hover a{
+	color:#e0c69b;
+}
+.content_two{   /*   好课的课程介绍   第二排  */
+	width:270px;
+	height:320px;
+	float:left;
+	position:absolute;
+	top:400px;
+}
+.maya{         /*   好课的课程介绍   maya */
+	width:270px;
+	height:320px;
+	margin-left:40px;
+	float:left;
+	position: absolute;
+}
+.maya:hover {
+	box-shadow: 4px 6px 10px #808080;
+}
+.maya_img{
+	width:270px;
+	height:182px;
+	background-color:antiquewhite;
+}
+.maya_kemu{
+	width:270px;
+	height:35px;
+	text-align: center;
+	padding-top:17px;
+	font-size:18px;
+}
+.maya_kemu a{
+	color:black;
+	text-decoration: none;
+}
+.maya_kemu:hover a{
+	color:#e0c69b;
+}
+.maya_jiangshi{
+	width:270px;
+	height:55px;
+}
+.maya_touxiang{
+	float:left;
+	width:55px;
+	height:55px;
+	padding-left:20px;
+}
+.maya_jiangshiming{
+	float:left;
+	color:gray;
+	line-height: 55px;
+	padding-left:10px;
+}
+.maya_jiangshiming a{
+	color:black;
+	text-decoration: none;
+}
+.maya_jiangshiming:hover a{
+	color:#e0c69b;
+}
+.Vray{         /*   好课的课程介绍   Vrva室内设计 */
+	width:270px;
+	height:320px;
+	float:left;
+	position: absolute;
+	left:350px;
+}
+.Vray:hover {
+	box-shadow: 4px 6px 10px #808080;
+}
+.Vray_img{
+	width:270px;
+	height:182px;
+	background-color:antiquewhite;
+}
+.Vray_kemu{
+	width:270px;
+	height:35px;
+	text-align: center;
+	padding-top:17px;
+	font-size:18px;
+}
+.Vray_kemu a{
+	color:black;
+	text-decoration: none;
+}
+.Vray_kemu:hover a{
+	color:#e0c69b;
+}
+.Vray_jiangshi{
+	width:270px;
+	height:55px;
+}
+.Vray_touxiang{
+	float:left;
+	width:55px;
+	height:55px;
+	padding-left:20px;
+}
+.Vray_jiangshiming{
+	float:left;
+	color:gray;
+	line-height: 55px;
+	padding-left:10px;
+}
+.Vray_jiangshiming a{
+	color:black;
+	text-decoration: none;
+}
+.Vray_jiangshiming:hover a{
+	color:#e0c69b;
+}
+.move{        /*   好课的课程介绍   move */
+	width:270px;
+	height:320px;
+	float:left;
+	position: absolute;
+	left:660px;
+}
+.move:hover {
+	box-shadow: 4px 6px 10px #808080;
+}
+.move_img{
+	width:270px;
+	height:182px;
+	background-color:antiquewhite;
+}
+.move_kemu{
+	width:270px;
+	height:35px;
+	text-align: center;
+	padding-top:17px;
+	font-size:18px;
+}
+.move_kemu a{
+	color:black;
+	text-decoration: none;
+}
+.move_kemu a{
+	color:black;
+	text-decoration: none;
+}
+.move_kemu:hover a{
+	color:#e0c69b;
+}
+.move_touxiang{
+	float:left;
+	width:55px;
+	height:55px;
+	padding-left:20px;
+}
+.move_jiangshiming{
+	float:left;
+	color:gray;
+	line-height: 55px;
+	padding-left:10px;
+}
+.move_jiangshiming a{
+	color:black;
+	text-decoration: none;
+}
+.move_jiangshiming:hover a{
+	color:#e0c69b;
+}
+
+.totipotent{         /*   好课的课程介绍   全能室内设计师 */
+	width:270px;
+	height:320px;
+	float:left;
+	position:absolute;
+	left:970px;
+}
+.totipotent:hover {
+	box-shadow: 4px 6px 10px #808080;
+}
+.totipotent_img{
+	width:270px;
+	height:182px;
+	background-color:antiquewhite;
+}
+.totipotent_kemu{
+	width:270px;
+	height:35px;
+	text-align: center;
+	padding-top:17px;
+	font-size:18px;
+}
+.totipotent_kemu a{
+	color:black;
+	text-decoration: none;
+}
+.totipotent_kemu:hover a{
+	color:#e0c69b;
+}
+.totipotent_jiangshi{
+	width:270px;
+	height:55px;
+}
+.totipotent_touxiang{
+	float:left;
+	width:55px;
+	height:55px;
+	padding-left:20px;
+}
+.totipotent_jiangshiming{
+	float:left;
+	color:gray;
+	line-height: 55px;
+	padding-left:10px;
+}
+.totipotent_jiangshiming a{
+	color:black;
+	text-decoration: none;
+}
+.totipotent_jiangshiming:hover a{
+	color:#e0c69b;
+}
+.content_three{   /*   好课的课程介绍   第三排  */
+	width:270px;
+	height:320px;
+	float:left;
+	position:absolute;
+	top:760px;
+}
+.c4d_3{         /*   好课的课程介绍   c4d  空中之城 */
+	width:270px;
+	height:320px;
+	margin-left:40px;
+	float:left;
+	position: absolute;
+}
+.c4d_3:hover {
+	box-shadow: 4px 6px 10px #808080;
+}
+.c4d_3_img{
+	width:270px;
+	height:182px;
+	background-color:antiquewhite;
+}
+.c4d_3_kemu{
+	width:270px;
+	height:35px;
+	text-align: center;
+	padding-top:17px;
+	font-size:18px;
+}
+.c4d_3_kemu a{
+	color:black;
+	text-decoration: none;
+}
+.c4d_3_kemu:hover a{
+	color:#e0c69b;
+}
+.c4d_3_jiangshi{
+	width:270px;
+	height:55px;
+}
+.c4d_3_touxiang{
+	float:left;
+	width:55px;
+	height:55px;
+	padding-left:20px;
+}
+.c4d_3_jiangshiming{
+	float:left;
+	color:gray;
+	line-height: 55px;
+	padding-left:10px;
+}
+.c4d_3_jiangshiming a{
+	color:black;
+	text-decoration: none;
+}
+.c4d_3_jiangshiming:hover a{
+	color:#e0c69b;
+}
+.fuse{         /*   好课的课程介绍   图像融合*/
+	width:270px;
+	height:320px;
+	float:left;
+	position: absolute;
+	left:350px;
+}
+.fuse:hover {
+	box-shadow: 4px 6px 10px #808080;
+}
+.fuse_img{
+	width:270px;
+	height:182px;
+	background-color:antiquewhite;
+}
+.fuse_kemu{
+	width:270px;
+	height:35px;
+	text-align: center;
+	padding-top:17px;
+	font-size:18px;
+}
+.fuse_kemu a{
+	color:black;
+	text-decoration: none;
+}
+.fuse_kemu:hover a{
+	color:#e0c69b;
+}
+.fuse_jiangshi{
+	width:270px;
+	height:55px;
+}
+.fuse_touxiang{
+	float:left;
+	width:55px;
+	height:55px;
+	padding-left:20px;
+}
+.fuse_jiangshiming{
+	float:left;
+	color:gray;
+	line-height: 55px;
+	padding-left:10px;
+}
+.fuse_jiangshiming a{
+	color:black;
+	text-decoration: none;
+}
+.fuse_jiangshiming:hover a{
+	color:#e0c69b;
+}
+.music{        /*   好课的课程介绍   音乐海报*/
+	width:270px;
+	height:320px;
+	float:left;
+	position: absolute;
+	left:660px;
+}
+.music:hover {
+	box-shadow: 4px 6px 10px #808080;
+}
+.music_img{
+	width:270px;
+	height:182px;
+	background-color:antiquewhite;
+}
+.music_kemu{
+	width:270px;
+	height:35px;
+	text-align: center;
+	padding-top:17px;
+	font-size:18px;
+}
+.music_kemu a{
+	color:black;
+	text-decoration: none;
+}
+.music_kemu a{
+	color:black;
+	text-decoration: none;
+}
+.music_kemu:hover a{
+	color:#e0c69b;
+}
+.music_touxiang{
+	float:left;
+	width:55px;
+	height:55px;
+	padding-left:20px;
+}
+.music_jiangshiming{
+	float:left;
+	color:gray;
+	line-height: 55px;
+	padding-left:10px;
+}
+.music_jiangshiming a{
+	color:black;
+	text-decoration: none;
+}
+.music_jiangshiming:hover a{
+	color:#e0c69b;
+}
+
+.portrait{         /*   好课的课程介绍   人像海报 */
+	width:270px;
+	height:320px;
+	float:left;
+	position:absolute;
+	left:970px;
+}
+.portrait:hover {
+	box-shadow: 4px 6px 10px #808080;
+}
+.portrait_img{
+	width:270px;
+	height:182px;
+	background-color:antiquewhite;
+}
+.portrait_kemu{
+	width:270px;
+	height:35px;
+	text-align: center;
+	padding-top:17px;
+	font-size:18px;
+}
+.portrait_kemu a{
+	color:black;
+	text-decoration: none;
+}
+.portrait_kemu:hover a{
+	color:#e0c69b;
+}
+.portrait_jiangshi{
+	width:270px;
+	height:55px;
+}
+.portrait_touxiang{
+	float:left;
+	width:55px;
+	height:55px;
+	padding-left:20px;
+}
+.portrait_jiangshiming{
+	float:left;
+	color:gray;
+	line-height: 55px;
+	padding-left:10px;
+}
+.portrait_jiangshiming a{
+	color:black;
+	text-decoration: none;
+}
+.portrait_jiangshiming:hover a{
+	color:#e0c69b;
+}
+.content_bottom{/*课程介绍的获取更多部分*/
+	width:1240px;
+	height:37px;
+	position: relative;
+	top:30px;
+}
+.content_more{         /*   获取更多免费好课的课程介绍   */
+	width:135px;
+	height:40px;
+	position: absolute;
+	
+}
+.click_content{         /*   获取更多免费好课的课程介绍   */
+	background-color:black;
+	position: absolute;
+	left:620px;
+	color:white;
+	width:135px;
+	text-align:center;
+	line-height:40px;
+}
+.content_more:hover div{
+	background-color:#e0c69b;
+}
+.last{   /*   最后一个部分*/
+	width:100%;
+	height:358px;
+	position:absolute;
+	top:1600px;
+	background-color:#15152a;
+}
+.last_top{   /*   最后一个部分  上边部分*/
+	width:1200px;
+	height:200px;
+	position: absolute;
+	left:55px;
+	top:40px;
+	border-bottom: 1px solid rgba(188,198,208,0.4);
+}
+.last_top_logo{   /*   最后一个部分  上边部分*/
+	width:84px;
+	height:23px;
+	margin-left:100px;
+	float:left;
+}
+.last_top_font{   /*   最后一个部分  上边部分*/
+	width:878px;
+	height:153px;
+	margin-left:100px;
+	float:left;
+}
+.last_problem{     /*   最后一个部分  遇到问题的文字部分*/
+	width:114px;
+	height:153px;
+	float:left;
+	display:inline-block;
+	letter-spacing:2px;
+}
+.last_problem a{
+	color:#999;
+	text-decoration:none ;
+}
+.last_yudao{
+	width:114px;
+	height:21px;
+	padding-top: 5px;
+    font-size: 14px;
+    line-height: 16px;
+    color:#fff;
+}
+.last_yudao:hover a{
+	color:#E0C69B;
+}
+
+.last_fuwu{
+	width:60px;
+	height:13px;
+	display: block;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height:13px;
+   
+}
+.last_fuwu:hover a{
+	color:#E0C69B;
+}
+.last_zhiliang{
+	width:60px;
+	height:13px;
+	display: block;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height:13px;
+}
+.last_zhiliang:hover a{
+	color:#E0C69B;
+}
+.last_yijian{
+	width:60px;
+	height:13px;
+	display: block;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height:13px;
+}
+.last_yijian:hover a{
+	color:#E0C69B;
+}
+.last_help{
+	width:60px;
+	height:13px;
+	display: block;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height:13px;
+}
+.last_help:hover a{
+	color:#E0C69B;
+}
+.last_about{ 
+	width:114px;
+	height:153px;
+	float:left;
+	display:inline-block;
+	letter-spacing:2px;
+}
+.last_about a{
+	color:#999;
+	text-decoration:none ;
+}
+.about_us{    /*   最后一个部分  右边文字加图标部分*/
+	width:204px;
+	height:91px;
+	float:right;
+	color:#fff;
+}
+.about_us h3{    /*   最后一个部分  右边文字部分*/
+	font-size:16px;
+}
+.about_icon{
+	width:220px;
+	height:37px;
+	margin-top:40px;
+}
+.about_icon_qq{
+	float:left;
+	width:40px;
+	height:40px;
+	background-image:url(../img/qq.png);
+}
+.about_icon_qq_two{
+	background-image:url(../img/qq1.png);
+}
+.about_icon_weixin{
+	float:left;
+	width:40px;
+	height:40px;
+	margin-left:16px;
+	background-image:url(../img/weixin.png);
+}
+.about_icon_weixin_two{
+	background-image:url(../img/weixin1.png);
+}
+.about_icon_weibo{
+	float:left;
+	width:40px;
+	height:40px;
+	margin-left:16px;
+	background-image:url(../img/weibo1.png);
+}
+.about_icon_weibo_two{
+	background-image:url(../img/weibo.png);
+}
+.about_icon_shouji{
+	float:left;
+	width:40px;
+	height:40px;
+	margin-left:16px;
+	background-image:url(../img/shouji.png);
+}
+.about_icon_shouji_two{
+	background-image:url(../img/shouji1.png);
+}
+.last_link{   /*   最后一个部分  下边部分*/
+	width:1200px;
+	height:63px;
+	position: absolute;
+	left:55px;
+	top:250px;
+	border-bottom: 1px solid rgba(188,198,208,0.4);
+}
+.link_left{
+	width:70px;
+	height:14px;
+	float:left;
+	line-height: 14px;
+    display: inline-block;
+    margin-left: 100px;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.last_link_font{   /*   最后一个部分  下边文字部分*/
+	width:878px;
+	height:66px;
+	margin-left:100px;
+	float:left;
+}
+.last_link_font a{
+	color:#999;
+	text-decoration: none;
+}
+.last_link_huo{
+	width:36px;
+	height:13px;
+	float:left;
+    font-size: 12px;
+    line-height:13px;
+}
+.last_link_huo:hover a{
+	color:#E0C69B;
+}
+.last_link_zai{
+	display: inline-block;
+    margin-left: 50px;
+    width:84px;
+    float:left;
+	height:13px;
+    font-size: 12px;
+    line-height:13px;
+}
+.last_link_zai:hover a{
+	color:#E0C69B;
+}
+.last_link_yujia{
+	display: inline-block;
+    margin-left:50px;
+    width:60px;
+    float:left;
+	height:13px;
+    font-size: 12px;
+    line-height:13px;
+}
+.last_link_yujia:hover a{
+	color:#E0C69B;
+}
+.last_link_dang{
+	display: inline-block;
+    margin-left:50px;
+    width:60px;
+    float:left;
+	height:13px;
+    font-size: 12px;
+    line-height:13px;
+}
+.last_link_dang:hover a{
+	color:#E0C69B;
+}
+.last_link_zikao{
+	display: inline-block;
+    margin-left:50px;
+    width:48px;
+    float:left;
+	height:13px;
+    font-size: 12px;
+    line-height:13px;
+}
+.last_link_zikao:hover a{
+	color:#E0C69B;
+}
+.last_link_ACA{
+	display: inline-block;
+    margin-left:50px;
+    width:61px;
+    float:left;
+	height:13px;
+    font-size: 12px;
+    line-height:13px;
+}
+.last_link_ACA:hover a{
+	color:#E0C69B;
+}
+.last_link_shang{
+	display: inline-block;
+    margin-left:50px;
+    width:72px;
+    float:left;
+	height:13px;
+    font-size: 12px;
+    line-height:13px;
+}
+.last_link_shang:hover a{
+	color:#E0C69B;
+}
+.last_link_lang{
+	display: inline-block;
+	margin-top:10px;
+    width:60px;
+    float:left;
+	height:13px;
+    font-size: 12px;
+    line-height:13px;
+}
+.last_link_lang:hover a{
+	color:#E0C69B;
+}
+.last_zuihou{
+	display: block;
+    font-size: 12px;
+    line-height: 23px;
+    transform: scale(0.9);
+    color: #999;
+    position: absolute;
+    top:320px;
+    left:110px;
+}
